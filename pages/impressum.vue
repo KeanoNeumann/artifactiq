@@ -8,7 +8,7 @@
       >
     </v-row>
     <v-row>
-      <v-col cols="6">
+      <v-col cols="12" sm="6">
         <h4 class="text-2xl mb-2 mt-4 font-thin" style="color: #0f5f96">
           Angaben gemäß § 5 TMG
         </h4>
@@ -17,7 +17,7 @@
         Hauptstraße 8<br />
         49326 Melle<br />
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" sm="6">
         <h4 class="text-2xl mb-2 mt-4 font-thin" style="color: #0f5f96">
           Kontakt
         </h4>
