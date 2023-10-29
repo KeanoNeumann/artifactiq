@@ -35,7 +35,7 @@
     <v-row
       class="pt-4 pb-64"
       style="
-        background-image: url(&quot;img/AdobeStock_212593816_Preview.png&quot;);
+        background-image: url(&quot;img/AdobeStock_212593816.jpeg&quot;);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
