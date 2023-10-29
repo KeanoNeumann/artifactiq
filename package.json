@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore",
+    "lint:prettier": "prettier --check .",
+    "lint": "bun lint:js && bun lint:prettier",
+    "lintfix": "prettier --write --list-different . && bun lint:js --fix"
+  },
+  "devDependencies": {
+    "@bg-dev/nuxt-s3": "^0.2.6",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@sidebase/nuxt-auth": "^0.6.0-beta.6",
+    "@types/node": "^20.6.2",
+    "@typescript-eslint/parser": "^6.7.0",
+    "@vite-pwa/nuxt": "^0.1.1",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "nuxt": "^3.7.3",
+    "prettier": "^3.0.3",
+    "prisma": "^5.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.2.96",
+    "@prisma/client": "5.3.1",
+    "@unlok-co/nuxt-stripe": "^2.0.0",
+    "next-auth": "4.21.1",
+    "nuxt-mail": "^4.0.1",
+    "sass": "^1.67.0",
+    "vuetify": "^3.3.16"
+  }
+}

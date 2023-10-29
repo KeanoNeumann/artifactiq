@@ -1,0 +1,69 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  binaryTargets   = "native"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [postgis]
+}
+
+model User {
+  id         Int      @id @default(autoincrement())
+  email      String   @db.VarChar(255)
+  forename   String   @db.VarChar(255)
+  lastname   String   @db.VarChar(255)
+  projection String   @db.VarChar(255)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  Area       Area[]
+}
+
+model Area {
+  id          Int                                    @id @default(autoincrement())
+  name        String                                 @db.VarChar(255)
+  geom        Unsupported("geometry(Polygon, 3857)")
+  createdAt   DateTime                               @default(now())
+  updatedAt   DateTime                               @updatedAt
+  user        User                                   @relation(fields: [userId], references: [id])
+  userId      Int
+  Prospection Prospection[]
+}
+
+model Prospection {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(255)
+  finished  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  area      Area     @relation(fields: [areaId], references: [id])
+  areaId    Int
+  Track     Track[]
+  Find      Find[]
+}
+
+model Track {
+  id            Int                                       @id @default(autoincrement())
+  geom          Unsupported("geometry(Linestring, 3857)")
+  createdAt     DateTime                                  @default(now())
+  updatedAt     DateTime                                  @updatedAt
+  prospection   Prospection                               @relation(fields: [prospectionId], references: [id])
+  prospectionId Int
+}
+
+model Find {
+  id            Int                                  @id @default(autoincrement())
+  geomn         Unsupported("geometry(Point, 3857)")
+  createdAt     DateTime                             @default(now())
+  updatedAt     DateTime                             @updatedAt
+  material      String                               @db.VarChar(255)
+  description   String
+  epoch         String                               @db.VarChar(255)
+  prospection   Prospection                          @relation(fields: [prospectionId], references: [id])
+  prospectionId Int
+}
