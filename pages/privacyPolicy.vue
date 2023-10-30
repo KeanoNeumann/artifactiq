@@ -1,19 +1,19 @@
 <template>
-  <div class="mx-16 mt-6">
+  <div class="sm:mx-16 mx-2 mt-6">
     <v-row>
       <v-col cols="12">
-        <h2 class="text-4xl mb-6 mt-4 font-normal" style="color: #0f5f96">
+        <h4 class="text-4xl mb-6 mt-4 font-normal" style="color: #0f5f96">
           Datenschutzerklärung
-        </h2></v-col
+        </h4></v-col
       >
     </v-row>
     <v-row>
       <v-col cols="12">
-        <h3 class="text-3xl mb-6 mt-4 font-thin" style="color: #0f5f96">
+        <h4>
           1. Datenschutz auf einen Blick
-        </h3>
+        </h4>
 
-        <h4 class="text-2xl mb-2 mt-4 font-thin" style="color: #0f5f96">
+        <h4>
           Allgemeine Hinweise
         </h4>
 
@@ -23,8 +23,8 @@
         >
           <span class="hr-inner"><span class="hr-inner-style"></span></span>
         </div>
-        <h2>1. Datenschutz auf einen Blick</h2>
-        <h3>Allgemeine Hinweise</h3>
+        <h4>1. Datenschutz auf einen Blick</h4>
+        <h5>Allgemeine Hinweise</h5>
         <p>
           Die folgenden Hinweise geben einen einfachen Überblick darüber, was
           mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website
@@ -33,7 +33,7 @@
           Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten
           Datenschutzerklärung.
         </p>
-        <h3>Datenerfassung auf dieser Website</h3>
+        <h5>Datenerfassung auf dieser Website</h5>
         <h4>
           Wer ist verantwortlich für die Datenerfassung auf dieser Website?
         </h4>
@@ -78,7 +78,7 @@
           Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich
           jederzeit an uns wenden.
         </p>
-        <h3>Analyse-Tools und Tools von Dritt­anbietern</h3>
+        <h5>Analyse-Tools und Tools von Dritt­anbietern</h5>
         <p>
           Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch
           ausgewertet werden. Das geschieht vor allem mit sogenannten
@@ -88,8 +88,8 @@
           Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in
           der folgenden Datenschutzerklärung.
         </p>
-        <h2>2. Hosting und Content Delivery Networks (CDN)</h2>
-        <h3>Externes Hosting</h3>
+        <h4>2. Hosting und Content Delivery Networks (CDN)</h4>
+        <h5>Externes Hosting</h5>
         <p>
           Diese Website wird bei einem externen Dienstleister gehostet (Hoster).
           Die personenbezogenen Daten, die auf dieser Website erfasst werden,
@@ -124,8 +124,8 @@
           einen Vertrag über Auftragsverarbeitung mit unserem Hoster
           geschlossen.
         </p>
-        <h2>3. Allgemeine Hinweise und Pflicht­informationen</h2>
-        <h3>Datenschutz</h3>
+        <h4>3. Allgemeine Hinweise und Pflicht­informationen</h4>
+        <h5>Datenschutz</h5>
         <p>
           Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten
           sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und
@@ -146,7 +146,7 @@
           aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch
           Dritte ist nicht möglich.
         </p>
-        <h3>Hinweis zur verantwortlichen Stelle</h3>
+        <h5>Hinweis zur verantwortlichen Stelle</h5>
         <p>
           Die verantwortliche Stelle für die Datenverarbeitung auf dieser
           Website ist:
@@ -170,7 +170,7 @@
           Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen,
           E-Mail-Adressen o. Ä.) entscheidet.
         </p>
-        <h3>Speicherdauer</h3>
+        <h5>Speicherdauer</h5>
         <p>
           Soweit innerhalb dieser Datenschutzerklärung keine speziellere
           Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten
@@ -182,7 +182,7 @@
           handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall
           erfolgt die Löschung nach Fortfall dieser Gründe.
         </p>
-        <h3>Hinweis zur Datenweitergabe in die USA</h3>
+        <h5>Hinweis zur Datenweitergabe in die USA</h5>
         <p>
           Auf unserer Website sind unter anderem Tools von Unternehmen mit Sitz
           in den USA eingebunden. Wenn diese Tools aktiv sind, können Ihre
@@ -197,17 +197,17 @@
           auswerten und dauerhaft speichern. Wir haben auf diese
           Verarbeitungstätigkeiten keinen Einfluss.
         </p>
-        <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+        <h5>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h5>
         <p>
           Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen
           Einwilligung möglich. Sie können eine bereits erteilte Einwilligung
           jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf
           erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
         </p>
-        <h3>
+        <h5>
           Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie
           gegen Direktwerbung (Art. 21 DSGVO)
-        </h3>
+        </h5>
         <p>
           WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER
           F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH
@@ -233,7 +233,7 @@
           MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21
           ABS. 2 DSGVO).
         </p>
-        <h3>Beschwerde­recht bei der zuständigen Aufsichts­behörde</h3>
+        <h5>Beschwerde­recht bei der zuständigen Aufsichts­behörde</h5>
         <p>
           Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein
           Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem
@@ -242,7 +242,7 @@
           besteht unbeschadet anderweitiger verwaltungsrechtlicher oder
           gerichtlicher Rechtsbehelfe.
         </p>
-        <h3>Recht auf Daten­übertrag­barkeit</h3>
+        <h5>Recht auf Daten­übertrag­barkeit</h5>
         <p>
           Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung
           oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich
@@ -251,7 +251,7 @@
           einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es
           technisch machbar ist.
         </p>
-        <h3>SSL- bzw. TLS-Verschlüsselung</h3>
+        <h5>SSL- bzw. TLS-Verschlüsselung</h5>
         <p>
           Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der
           Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder
@@ -265,7 +265,7 @@
           Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen
           werden.
         </p>
-        <h3>Auskunft, Löschung und Berichtigung</h3>
+        <h5>Auskunft, Löschung und Berichtigung</h5>
         <p>
           Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit
           das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
@@ -274,7 +274,7 @@
           Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema
           personenbezogene Daten können Sie sich jederzeit an uns wenden.
         </p>
-        <h3>Recht auf Einschränkung der Verarbeitung</h3>
+        <h5>Recht auf Einschränkung der Verarbeitung</h5>
         <p>
           Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer
           personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit
@@ -318,8 +318,8 @@
           öffentlichen Interesses der Europäischen Union oder eines
           Mitgliedstaats verarbeitet werden.
         </p>
-        <h2>4. Datenerfassung auf dieser Website</h2>
-        <h3>Cookies</h3>
+        <h4>4. Datenerfassung auf dieser Website</h4>
+        <h5>Cookies</h5>
         <p>
           Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind
           kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an.
@@ -372,7 +372,7 @@
           werden, werden wir Sie hierüber im Rahmen dieser Datenschutzerklärung
           gesondert informieren und ggf. eine Einwilligung abfragen.
         </p>
-        <h3>Kontaktformular</h3>
+        <h5>Kontaktformular</h5>
         <p>
           Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre
           Angaben aus dem Anfrageformular inklusive der von Ihnen dort
@@ -398,7 +398,7 @@
           Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen
           – bleiben unberührt.
         </p>
-        <h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
+        <h5>Anfrage per E-Mail, Telefon oder Telefax</h5>
         <p>
           Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre
           Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten
@@ -424,8 +424,8 @@
           Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere
           gesetzliche Aufbewahrungsfristen – bleiben unberührt.
         </p>
-        <h2>5. Plugins und Tools</h2>
-        <h3>Google Web Fonts</h3>
+        <h4>5. Plugins und Tools</h4>
+        <h5>Google Web Fonts</h5>
         <p>
           Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so
           genannte Web Fonts, die von Google bereitgestellt werden. Beim Aufruf
@@ -464,7 +464,7 @@
             >https://policies.google.com/privacy?hl=de</a
           >.
         </p>
-        <h3>Google reCAPTCHA</h3>
+        <h5>Google reCAPTCHA</h5>
         <p>
           Wir nutzen „Google reCAPTCHA“ (im Folgenden „reCAPTCHA“) auf dieser
           Website. Anbieter ist die Google Ireland Limited („Google“), Gordon
@@ -540,18 +540,18 @@ export default {};
   text-decoration: underline;
 }
 
-h2 {
-  font-size: 1.875rem; /* 30px */
-  line-height: 2.25rem; /* 36px */
-  margin-bottom: 1.5rem; /* 24px */
+h4 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  margin-bottom: 0.5rem; /* 8px */
   margin-top: 1rem; /* 16px */
   font-weight: 100;
   color: #0f5f96;
 }
 
-h3 {
-  font-size: 1.5rem; /* 24px */
-  line-height: 2rem; /* 32px */
+h5 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
   margin-bottom: 0.5rem; /* 8px */
   margin-top: 1rem; /* 16px */
   font-weight: 100;
