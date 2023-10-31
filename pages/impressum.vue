@@ -1,7 +1,7 @@
 <template>
   <div class="sm:mx-16 mx-2 mt-6">
     <v-row>
-      <v-col cols="12"> <h1 class="mb-6 mt-4">Kontakt</h1></v-col>
+      <v-col cols="12"> <h1 class="mb-6 mt-4">Impressum</h1></v-col>
     </v-row>
     <v-row>
       <v-col cols="12" sm="6">
