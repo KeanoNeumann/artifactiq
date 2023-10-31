@@ -24,7 +24,9 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <h2 v-if="!isMobile">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+        <h2 v-if="!isMobile">
+          Verbraucherstreitbeilegung / Universalschlichtungsstelle
+        </h2>
         <h3 v-else>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h3>
         Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
         vor einer Verbraucherschlichtungsstelle teilzunehmen.
@@ -79,7 +81,6 @@
 
 <script setup>
 const { isMobile } = useDevice();
-
 </script>
 
 <style>

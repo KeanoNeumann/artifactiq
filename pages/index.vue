@@ -16,7 +16,11 @@
           </h1>
           <div class="mt-4 text-center sm:text-left">
             <nuxt-link to="#details">
-              <v-btn class="sm:mr-8 mb-4 sm:mb-0" rounded="xl" variant="flat" color="#0f5f96"
+              <v-btn
+                class="sm:mr-8 mb-4 sm:mb-0"
+                rounded="xl"
+                variant="flat"
+                color="#0f5f96"
                 >Mehr erfahren</v-btn
               >
             </nuxt-link>
@@ -29,7 +33,11 @@
         </div>
       </v-col>
       <v-col cols="12" sm="2"
-        ><v-img class="mt-10 sm:mt-0" style="max-height: 412px" src="img/iphone Kopie.png"></v-img
+        ><v-img
+          class="mt-10 sm:mt-0"
+          style="max-height: 412px"
+          src="img/iphone Kopie.png"
+        ></v-img
       ></v-col>
     </v-row>
     <v-row
