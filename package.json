@@ -16,6 +16,7 @@
   "devDependencies": {
     "@bg-dev/nuxt-s3": "^0.2.6",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/device": "^3.1.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@sidebase/nuxt-auth": "^0.6.0-beta.6",

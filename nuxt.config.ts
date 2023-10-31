@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@unlok-co/nuxt-stripe",
     "nuxt-mail",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/device",
   ],
   css: [
     "vuetify/lib/styles/main.sass",

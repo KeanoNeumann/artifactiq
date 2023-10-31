@@ -1,7 +1,7 @@
 <template>
   <v-row>
-    <v-col cols="2"> </v-col>
-    <v-col cols="8">
+    <v-col cols="2" v-if="!isMobile"> </v-col>
+    <v-col cols="12" md="8">
       <iframe
         width="540"
         height="1050"
@@ -17,12 +17,12 @@
         "
       ></iframe>
     </v-col>
-    <v-col cols="2"> </v-col>
+    <v-col cols="2" v-if="!isMobile"> </v-col>
   </v-row>
 </template>
 
-<script>
-export default {};
+<script setup>
+const { isMobile } = useDevice();
 </script>
 
 <style></style>

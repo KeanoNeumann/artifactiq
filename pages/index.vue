@@ -1,22 +1,22 @@
 <template>
   <div>
     <v-row class="pt-8 pb-3" style="background-color: #f7fbfc">
-      <v-col cols="5">
+      <v-col cols="12" sm="5">
         <div class="m-auto h-full w-full">
           <v-img src="img/macbook Kopie.png" class="h-full w-full"></v-img>
         </div>
       </v-col>
 
-      <v-col cols="5">
+      <v-col cols="12" sm="5">
         <v-img src="logo.png"></v-img>
         <div class="grid place-items-center h-full" style="max-height: 256px">
-          <h3 class="text-4xl text-center">
+          <h1 class="text-center">
             Wir entwickeln die digitale Plattform für Sondengänger und
             Archäologen!
-          </h3>
-          <div class="mt-4">
+          </h1>
+          <div class="mt-4 text-center sm:text-left">
             <nuxt-link to="#details">
-              <v-btn class="mr-8" rounded="xl" variant="flat" color="#0f5f96"
+              <v-btn class="sm:mr-8 mb-4 sm:mb-0" rounded="xl" variant="flat" color="#0f5f96"
                 >Mehr erfahren</v-btn
               >
             </nuxt-link>
@@ -28,8 +28,8 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="2"
-        ><v-img style="max-height: 412px" src="img/iphone Kopie.png"></v-img
+      <v-col cols="12" sm="2"
+        ><v-img class="mt-10 sm:mt-0" style="max-height: 412px" src="img/iphone Kopie.png"></v-img
       ></v-col>
     </v-row>
     <v-row
@@ -42,24 +42,24 @@
       "
     >
       <v-row>
-        <v-col cols="2"></v-col>
-        <v-col cols="8">
+        <v-col cols="2" v-if="!isMobile"></v-col>
+        <v-col cols="12" sm="8">
           <!-- <div class="text-4xl text-center pt-4">
             Die innovative Plattform für Sondengänger: Erfasse, teile und
             diskutiere deine Entdeckungen.
           </div> -->
         </v-col>
-        <v-col cols="2"></v-col>
+        <v-col cols="2" v-if="!isMobile"></v-col>
       </v-row>
     </v-row>
     <v-row>
-      <v-col cols="6" class="my-auto">
+      <v-col cols="6" v-if="!isMobile" class="my-auto">
         <v-img src="img/9897.jpg" id="details"></v-img>
       </v-col>
-      <v-col cols="6" class="my-auto">
-        <h2 class="text-2xl mb-6 mt-4 font-semibold" style="color: #0f5f96">
+      <v-col cols="12" sm="6" class="my-auto text-center sm:text-left">
+        <h3 class="mb-6 mt-4">
           Willkommen bei ArtifactIQ – Dem Portal für Sondengänger!
-        </h2>
+        </h3>
         <p>
           ArtifactIQ ist eine innovative Softwarelösung, die entwickelt wurde,
           um Sondengänger und Archäologen auf einer gemeinsamen Plattform zu
@@ -103,47 +103,50 @@
           >
         </nuxt-link>
       </v-col>
+      <v-col cols="12" sm="6" v-if="isMobile" class="my-auto">
+        <v-img src="img/9897.jpg" id="details"></v-img>
+      </v-col>
     </v-row>
     <v-row>
-      <v-col cols="3"
-        ><feature
+      <v-col cols="12" sm="3"
+        ><WebFeature
           title="Einfaches Inventar"
           text="Organisiere und katalogisiere deine Fundstücke in deinem persönlichen digitalen Inventar."
           icon="mdi-bookmark-check"
-        ></feature
+        ></WebFeature
       ></v-col>
-      <v-col cols="3">
-        <feature
+      <v-col cols="12" sm="3">
+        <WebFeature
           title="Direkte Übertragung"
           text="Nahtlose Synchronisation zwischen mobiler App und Webapplikation. Dokumentiere unterwegs und bearbeite zu Hause."
           icon="mdi-antenna"
-        ></feature>
+        ></WebFeature>
       </v-col>
-      <v-col cols="3">
-        <feature
+      <v-col cols="12" sm="3">
+        <WebFeature
           title="Community"
           text="Teile deine Entdeckungen mit der Community. Erhalte Feedback und wertvolle Einsichten zu deinen Funden und tausche dich mit Gleichgesinnten aus."
           icon="mdi-chat"
-        ></feature>
+        ></WebFeature>
       </v-col>
-      <v-col cols="3">
-        <feature
+      <v-col cols="12" sm="3">
+        <WebFeature
           title="Verbindung zu Archäologen"
           text="Werde von Archäologischen Instituten eingeladen, gruppiere Funde und stelle relevante Entdeckungen direkt vor."
           icon="mdi-account-search"
-        ></feature>
+        ></WebFeature>
       </v-col>
     </v-row>
 
     <v-row>
-      <v-col cols="3"></v-col>
-      <v-col cols="6">
-        <h3
-          class="text-4xl text-center mb-8 underline underline-offset-8 font-bold"
+      <v-col cols="3" v-if="!isMobile"></v-col>
+      <v-col cols="12" md="6">
+        <h1
+          class="text-center mb-8 underline underline-offset-8"
           style="text-decoration-color: #0f5f96; color: #0f5f96"
         >
           Häufig gestellte Fragen
-        </h3>
+        </h1>
         <v-expansion-panels>
           <v-expansion-panel
             title="Was ist das Hauptziel dieser Webapplikation und App?"
@@ -182,7 +185,7 @@
           </v-expansion-panel>
         </v-expansion-panels>
       </v-col>
-      <v-col cols="3"></v-col>
+      <v-col cols="3" v-if="!isMobile"></v-col>
     </v-row>
     <v-row class="flex justify-center mt-16">
       <h3
@@ -194,18 +197,14 @@
     </v-row>
     <v-row>
       <ClientOnly>
-        <newsletter id="newsletter"></newsletter>
+        <WebNewsletter id="newsletter"></WebNewsletter>
       </ClientOnly>
     </v-row>
   </div>
 </template>
 
-<script>
-import feature from "~/components/web/feature.vue";
-import Newsletter from "~/components/web/newsletter.vue";
-export default {
-  components: { feature, Newsletter },
-};
+<script setup>
+const { isMobile } = useDevice();
 </script>
 
 <style></style>

@@ -1,17 +1,13 @@
 <template>
-  <div class="mx-16 mt-6">
+  <div class="sm:mx-16 mx-2 mt-6">
     <v-row>
-      <v-col cols="2"></v-col>
-      <v-col cols="8">
-        <h2 class="text-4xl mb-6 mt-4 font-normal" style="color: #0f5f96">
-          Kontakt
-        </h2></v-col
-      >
-      <v-col cols="2"></v-col>
+      <v-col cols="2" v-if="!isMobile"></v-col>
+      <v-col cols="12" md="8"> <h2 class="mb-6 mt-4">Kontakt</h2></v-col>
+      <v-col cols="2" v-if="!isMobile"></v-col>
     </v-row>
     <v-row>
-      <v-col cols="2"></v-col>
-      <v-col cols="5">
+      <v-col cols="2" v-if="!isMobile"></v-col>
+      <v-col cols="12" md="5">
         <h3>Kontaktformular</h3>
         <v-text-field
           label="Ihre E-Mail"
@@ -43,16 +39,14 @@
         ></v-textarea>
         <v-btn @click="send" color="#0f5f96" variant="flat">Senden</v-btn>
       </v-col>
-      <v-col cols="3">
+      <v-col cols="12" md="3" class="text-center sm:text-left">
         <h3>Anschrift</h3>
         <b style="color: #0f5f96">NewDot Digital</b><br />
         Keano Neumann<br />
         Hauptstraße 8<br />
         49326 Melle<br /><br />
 
-        <h4 class="text-2xl mb-2 mt-4 font-thin" style="color: #0f5f96">
-          Kontakt
-        </h4>
+        <h3>Kontakt</h3>
         <b>Tel: </b>
         <a class="links" href="tel:+4954283639990">+49 (0)5428 36399 90</a
         ><br />
@@ -61,7 +55,7 @@
           >info@newdot.digital</a
         >
       </v-col>
-      <v-col cols="2"></v-col>
+      <v-col cols="2" v-if="!isMobile"></v-col>
     </v-row>
     <v-snackbar v-model="snackbar" color="success">
       Ihre Nachricht wurde gesendet!
@@ -71,6 +65,7 @@
 
 <script setup>
 const mail = useMail();
+const { isMobile } = useDevice();
 
 const snackbar = ref(false);
 const email = ref("");
@@ -104,13 +99,4 @@ const send = function () {
 };
 </script>
 
-<style>
-h3 {
-  font-size: 1.5rem; /* 24px */
-  line-height: 2rem; /* 32px */
-  margin-bottom: 0.5rem; /* 8px */
-  margin-top: 1rem; /* 16px */
-  font-weight: 100;
-  color: #0f5f96;
-}
-</style>
+<style></style>

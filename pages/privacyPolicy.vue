@@ -9,13 +9,9 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <h4>
-          1. Datenschutz auf einen Blick
-        </h4>
+        <h4>1. Datenschutz auf einen Blick</h4>
 
-        <h4>
-          Allgemeine Hinweise
-        </h4>
+        <h4>Allgemeine Hinweise</h4>
 
         <div
           style="height: 50px"
@@ -538,23 +534,5 @@ export default {};
 .links:hover {
   color: #0f5f96;
   text-decoration: underline;
-}
-
-h4 {
-  font-size: 1.25rem; /* 20px */
-  line-height: 1.75rem; /* 28px */
-  margin-bottom: 0.5rem; /* 8px */
-  margin-top: 1rem; /* 16px */
-  font-weight: 100;
-  color: #0f5f96;
-}
-
-h5 {
-  font-size: 1.125rem; /* 18px */
-  line-height: 1.75rem; /* 28px */
-  margin-bottom: 0.5rem; /* 8px */
-  margin-top: 1rem; /* 16px */
-  font-weight: 100;
-  color: #0f5f96;
 }
 </style>

@@ -9,7 +9,9 @@
       ></v-avatar>
     </div>
     <v-card class="text-center" style="min-height: 230px" color="#0f5f96">
-      <h2 class="mt-16 text-2xl" style="color: white !important">{{ title }}</h2>
+      <h2 class="mt-16 text-2xl" style="color: white !important">
+        {{ title }}
+      </h2>
       <v-card-text>{{ text }}</v-card-text>
     </v-card>
   </div>
