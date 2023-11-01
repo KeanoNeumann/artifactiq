@@ -10,14 +10,14 @@
       <v-col cols="12" sm="5">
         <v-img src="logo.png"></v-img>
         <div class="grid place-items-center h-full" style="max-height: 256px">
-          <h1 class="text-center">
+          <h1 class="text-center text-2xl lg:text-3xl xl:text-4xl">
             Wir entwickeln die digitale Plattform für Sondengänger und
             Archäologen!
           </h1>
           <div class="mt-4 text-center sm:text-left">
             <nuxt-link to="#details">
               <v-btn
-                class="sm:mr-8 mb-4 sm:mb-0"
+                class="xl:mr-8 mb-4 sm:mb-0"
                 rounded="xl"
                 variant="flat"
                 color="#0f5f96"
@@ -25,7 +25,7 @@
               >
             </nuxt-link>
             <nuxt-link to="#newsletter">
-              <v-btn rounded="xl" variant="flat" color="#0f5f96"
+              <v-btn rounded="xl" variant="flat" color="#0f5f96" class="mb-4"
                 >Newsletter abonnieren</v-btn
               >
             </nuxt-link>
@@ -41,7 +41,7 @@
       ></v-col>
     </v-row>
     <v-row
-      class="pt-4 pb-64"
+      class="pt-4 pb-64 md:mb-32"
       style="
         background-image: url(&quot;img/AdobeStock_212593816.jpeg&quot;);
         background-position: center;
@@ -49,16 +49,16 @@
         background-size: cover;
       "
     >
-      <v-row>
+      <!-- <v-row>
         <v-col cols="2" v-if="!isMobile"></v-col>
         <v-col cols="12" sm="8">
-          <!-- <div class="text-4xl text-center pt-4">
+          <div class="text-4xl text-center pt-4">
             Die innovative Plattform für Sondengänger: Erfasse, teile und
             diskutiere deine Entdeckungen.
-          </div> -->
+          </div> 
         </v-col>
         <v-col cols="2" v-if="!isMobile"></v-col>
-      </v-row>
+      </v-row> -->
     </v-row>
     <v-row>
       <v-col cols="6" v-if="!isMobile" class="my-auto">
