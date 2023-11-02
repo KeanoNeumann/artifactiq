@@ -116,28 +116,28 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12" sm="3"
+      <v-col cols="12" md="3"
         ><WebFeature
           title="Einfaches Inventar"
           text="Organisiere und katalogisiere deine Fundstücke in deinem persönlichen digitalen Inventar."
           icon="mdi-bookmark-check"
         ></WebFeature
       ></v-col>
-      <v-col cols="12" sm="3">
+      <v-col cols="12" md="3">
         <WebFeature
           title="Direkte Übertragung"
           text="Nahtlose Synchronisation zwischen mobiler App und Webapplikation. Dokumentiere unterwegs und bearbeite zu Hause."
           icon="mdi-antenna"
         ></WebFeature>
       </v-col>
-      <v-col cols="12" sm="3">
+      <v-col cols="12" md="3">
         <WebFeature
           title="Community"
           text="Teile deine Entdeckungen mit der Community. Erhalte Feedback und wertvolle Einsichten zu deinen Funden und tausche dich mit Gleichgesinnten aus."
           icon="mdi-chat"
         ></WebFeature>
       </v-col>
-      <v-col cols="12" sm="3">
+      <v-col cols="12" md="3">
         <WebFeature
           title="Verbindung zu Archäologen"
           text="Werde von Archäologischen Instituten eingeladen, gruppiere Funde und stelle relevante Entdeckungen direkt vor."
