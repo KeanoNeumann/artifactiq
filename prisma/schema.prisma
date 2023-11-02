@@ -7,10 +7,16 @@ generator client {
   previewFeatures = ["postgresqlExtensions"]
 }
 
+// datasource db {
+//   provider   = "postgresql"
+//   url        = env("DATABASE_URL")
+//   extensions = [postgis]
+// }
+
 datasource db {
-  provider   = "postgresql"
-  url        = env("DATABASE_URL")
-  extensions = [postgis]
+  provider = "postgresql"
+  url = env("DATABASE_PRISMA_URL") // uses connection pooling
+  directUrl = env("DATABASE_URL_NON_POOLING") // uses a direct connection
 }
 
 model User {
