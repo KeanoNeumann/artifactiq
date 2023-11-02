@@ -14,10 +14,10 @@
             Wir entwickeln die digitale Plattform für Sondengänger und
             Archäologen!
           </h1>
-          <div class="mt-4 text-center sm:text-left">
+          <div class="mt-4 text-center xl:text-left">
             <nuxt-link to="#details">
               <v-btn
-                class="xl:mr-8 mb-4 sm:mb-0"
+                class="lg:mr-8 mb-4 sm:mb-0"
                 rounded="xl"
                 variant="flat"
                 color="#0f5f96"
@@ -61,10 +61,10 @@
       </v-row> -->
     </v-row>
     <v-row>
-      <v-col cols="6" v-if="!isMobile" class="my-auto">
+      <v-col cols="6" class="my-auto lg:block hidden">
         <v-img src="img/9897.jpg" id="details"></v-img>
       </v-col>
-      <v-col cols="12" sm="6" class="my-auto text-center sm:text-left">
+      <v-col class="my-auto text-center sm:text-left w-full lg:w-1/2">
         <h3 class="mb-6 mt-4">
           Willkommen bei ArtifactIQ – Dem Portal für Sondengänger!
         </h3>
@@ -111,7 +111,7 @@
           >
         </nuxt-link>
       </v-col>
-      <v-col cols="12" sm="6" v-if="isMobile" class="my-auto">
+      <v-col cols="12" lg="6" class="my-auto lg:hidden block">
         <v-img src="img/9897.jpg" id="details"></v-img>
       </v-col>
     </v-row>
