@@ -213,6 +213,10 @@
 
 <script setup>
 const { isMobile } = useDevice();
+
+definePageMeta({
+  layout: "web",
+});
 </script>
 
 <style></style>

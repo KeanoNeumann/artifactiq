@@ -46,3 +46,12 @@ h5 {
   font-weight: 100;
   color: #0f5f96;
 }
+
+.links {
+  color: #0f5f96;
+}
+
+.links:hover {
+  color: #0f5f96;
+  text-decoration: underline;
+}

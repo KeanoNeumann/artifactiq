@@ -522,17 +522,10 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+definePageMeta({
+  layout: "web",
+});
 </script>
 
-<style>
-.links {
-  color: #0f5f96;
-}
-
-.links:hover {
-  color: #0f5f96;
-  text-decoration: underline;
-}
-</style>
+<style></style>

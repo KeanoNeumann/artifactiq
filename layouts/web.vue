@@ -5,7 +5,7 @@
         class="my-2"
         style="cursor: pointer"
         @click="navigateTo('/')"
-        src="wappen.png"
+        src="/wappen.png"
         max-width="300"
         contain
       ></v-img>
@@ -17,7 +17,7 @@
         <NuxtLink to="pricing">
           <div class="mr-12 nav-button">Pricing</div>
         </NuxtLink> -->
-        <NuxtLink to="contact">
+        <NuxtLink to="/contact">
           <div class="mr-12 nav-button">Kontakt</div>
         </NuxtLink>
       </div>

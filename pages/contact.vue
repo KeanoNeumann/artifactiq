@@ -64,6 +64,10 @@
 </template>
 
 <script setup>
+definePageMeta({
+  layout: "web",
+});
+
 const mail = useMail();
 const { isMobile } = useDevice();
 

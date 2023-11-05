@@ -1,6 +1,4 @@
-<template>
-  <div>fghdzh</div>
-</template>
+<template>TEST</template>
 
 <script setup>
 definePageMeta({ middleware: "auth" });

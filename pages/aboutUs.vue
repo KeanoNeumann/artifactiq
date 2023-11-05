@@ -1,7 +1,9 @@
 <template></template>
 
-<script>
-export default {};
+<script setup>
+definePageMeta({
+  layout: "web",
+});
 </script>
 
 <style></style>
