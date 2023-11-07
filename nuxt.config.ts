@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "nuxt-mail",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/device",
+    "@nuxtjs/robots",
   ],
   css: [
     "vuetify/lib/styles/main.sass",
