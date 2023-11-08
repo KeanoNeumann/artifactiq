@@ -45,8 +45,8 @@ export default NuxtAuthHandler({
         const user = {
           id: "1",
           name: "J Smith",
-          username: "jsmith",
-          password: "hunter2",
+          username: "jsmith@asd.de",
+          password: "1234",
           image: "https://avatars.githubusercontent.com/u/25911230?v=4",
         };
 
@@ -55,6 +55,7 @@ export default NuxtAuthHandler({
           credentials?.password === user.password
         ) {
           // Any object returned will be saved in `user` property of the JWT
+          console.log(user);
           return user;
         } else {
           // eslint-disable-next-line no-console

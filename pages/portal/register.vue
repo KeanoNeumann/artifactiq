@@ -25,6 +25,7 @@
             v-model="username"
             label="E-Mail"
             class="mt-6"
+            :rules="[rules.required, rules.email]"
             prepend-inner-icon="mdi-email"
           ></v-text-field>
           <v-text-field
@@ -33,9 +34,9 @@
             prepend-inner-icon="mdi-lock"
             :append-inner-icon="!showPassword ? 'mdi-eye-off' : 'mdi-eye'"
             :append-icon="capslock ? 'mdi-apple-keyboard-caps' : ''"
-            @click:append-inner="showPassword = !showPassword"
             :type="showPassword ? 'text' : 'password'"
-            :rules="[rules.required, rules.min]"
+            :rules="[rules.required, rules.min, rules.number, rules.special]"
+            @click:append-inner="showPassword = !showPassword"
             @keyup="capsLock"
           ></v-text-field>
           <div class="w-full">
@@ -69,7 +70,14 @@ const rules = ref({
   required: (value) => !!value || "Feld benötigt.",
   min: (v) =>
     v.length >= 8 || "Mindestens 8 Zeichen, eine Zahl und ein Sonderzeichen",
-  
+  number: (v) =>
+    v.match(/[0-9]+/) || "Das Passwort muss mindestens eine Zahl enthalten",
+  special: (v) =>
+    v.match(/[!,.|[\]{}#$%&/()=?~@_^*:;]+/) ||
+    "Das Passwort muss mindestens ein Sonderzeichen enthalten",
+  email: (v) =>
+    v.match(/[A-Za-z0-9\-_.+]{1,64}@[A-Za-z0-9\-_.]+\.[a-zA-Z]+/) ||
+    "Die E-Mail Adresse ist ungültig",
 });
 
 definePageMeta({

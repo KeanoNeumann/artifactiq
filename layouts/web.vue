@@ -23,7 +23,11 @@
       </div>
 
       <template #append>
-        <!-- <v-btn rounded="xl" variant="flat" color="#0f5f96">Zum Portal</v-btn> -->
+        <NuxtLink to="/portal">
+          <v-btn rounded="xl" variant="flat" color="#0f5f96" class="mr-8"
+            >Zum Portal</v-btn
+          >
+        </NuxtLink>
         <a href="https://facebook.com/artifactiq" target="blank"
           ><v-btn icon="mdi-facebook" size="medium"></v-btn
         ></a>
