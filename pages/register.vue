@@ -11,7 +11,7 @@
               Daten ein oder erstellen Sie sich einen Account mit dem Formular
               auf der rechnte Seite
             </p>
-            <NuxtLink to="/portal/login">
+            <NuxtLink to="/login">
               <v-btn variant="outlined" size="large">Einloggen</v-btn></NuxtLink
             >
           </div>
@@ -22,7 +22,7 @@
           <p>Geben Sie Ihre Benutzerdaten ein.</p>
 
           <v-text-field
-            v-model="username"
+            v-model="email"
             label="E-Mail"
             class="mt-6"
             :rules="[rules.required, rules.email]"
@@ -40,7 +40,11 @@
             @keyup="capsLock"
           ></v-text-field>
           <div class="w-full">
-            <v-btn class="mt-8" color="primary" :loading="loading" @click="send"
+            <v-btn
+              class="mt-8"
+              color="primary"
+              :loading="loading"
+              @click="createUser"
               >Registrieren</v-btn
             >
           </div>
@@ -57,11 +61,9 @@
 </template>
 
 <script setup>
-const { signIn } = useAuth();
-
 const loading = ref(false);
 
-const username = ref("");
+const email = ref("");
 const password = ref("");
 const capslock = ref(false);
 const showPassword = ref(false);
@@ -87,19 +89,6 @@ definePageMeta({
   },
 });
 
-function send() {
-  loading.value = true;
-
-  signIn("credentials", { username: "test", password: "hunter2" })
-    .then(() => {
-      loading.value = false;
-      navigateTo("/portal");
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-}
-
 function capsLock(event) {
   // If "caps lock" is pressed, display the warning text
   if (event.getModifierState("CapsLock")) {
@@ -107,5 +96,17 @@ function capsLock(event) {
   } else {
     capslock.value = false;
   }
+}
+
+function createUser() {
+  useFetch("/api/portal/user/create", {
+    method: "POST",
+    body: {
+      email: email.value,
+      password: password.value,
+    },
+  }).then(() => {
+    navigateTo("/portal/welcome");
+  });
 }
 </script>

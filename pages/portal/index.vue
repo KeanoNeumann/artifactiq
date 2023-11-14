@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-btn @click="logout">Logout</v-btn>
+    <v-btn @click="createUser">User</v-btn>
   </div>
 </template>
 
@@ -10,6 +11,16 @@ const { signOut } = useAuth();
 
 function logout() {
   signOut();
+}
+
+function createUser() {
+  useFetch("/api/portal/user/create", {
+    method: "POST",
+    body: {
+      email: "keano.neumann@gmx.de",
+      password: "test123",
+    },
+  });
 }
 </script>
 

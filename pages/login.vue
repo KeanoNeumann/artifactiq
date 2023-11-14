@@ -71,7 +71,7 @@ definePageMeta({
 async function login() {
   loading.value = true;
   const { error, url } = await signIn("credentials", {
-    username: username.value,
+    email: username.value,
     password: password.value,
     redirect: false,
     callbackUrl: "/portal",

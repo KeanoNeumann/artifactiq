@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "forename" DROP NOT NULL,
+ALTER COLUMN "lastname" DROP NOT NULL,
+ALTER COLUMN "projection" DROP NOT NULL,
+ALTER COLUMN "updatedAt" DROP NOT NULL;
