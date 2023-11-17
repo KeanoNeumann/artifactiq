@@ -33,20 +33,14 @@
             >Registrieren</v-btn
           >
         </NuxtLink>
-        <a href="https://facebook.com/artifactiq" target="blank"
-          ><v-btn icon="mdi-facebook" size="medium"></v-btn
-        ></a>
-        <a href="https://www.instagram.com/artifact.iq" target="blank"
-          ><v-btn icon="mdi-instagram" size="medium" class="mx-2"></v-btn
-        ></a>
       </template>
     </v-app-bar>
     <v-main class="mt-10">
       <slot />
     </v-main>
-    <v-footer class="w-full flex justify-center">
+    <div>
       <web-footer></web-footer>
-    </v-footer>
+    </div>
   </v-app>
 </template>
 
